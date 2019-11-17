@@ -1,4 +1,8 @@
 module.exports = {
+  title: '',
+  head: [
+    ['link', { rel: 'icon', href: '/logo.png' }]
+  ],
   locales: {
     '/': {
       lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
@@ -13,6 +17,7 @@ module.exports = {
   },
   // 配置主题的语言
   themeConfig: {
+    smoothScroll: true,
     locales: {
       '/': {
         // 多语言下拉菜单的标题
@@ -31,11 +36,11 @@ module.exports = {
         // 当前 locale 的 algolia docsearch 选项
         algolia: {},
         nav: [
-          { text: '嵌套', link: '/zh/nested/' }
+          { text: '指南', link: '/guide/' }
         ],
         sidebar: {
-          '/zh/': [/* ... */],
-          '/zh/nested/': [/* ... */]
+          '/': [/* ... */],
+          '/guide/': [/* ... */]
         }
       },
       '/en/': {
@@ -51,11 +56,11 @@ module.exports = {
         },
         algolia: {},
         nav: [
-          { text: 'Nested', link: '/nested/', ariaLabel: 'Nested' }
+          { text: 'Guide', link: '/guide/', ariaLabel: 'Guide' }
         ],
         sidebar: {
-          '/': [/* ... */],
-          '/nested/': [/* ... */]
+          '/en/': [/* ... */],
+          '/en/guide/': [/* ... */]
         }
       }
     }
@@ -64,7 +69,7 @@ module.exports = {
     [
       '@vuepress/google-analytics',
       {
-        'ga': '' // UA-00000000-0
+        'ga': 'UA-152692837-1' 
       }
     ]
   ],
