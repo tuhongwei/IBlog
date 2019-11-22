@@ -1,7 +1,7 @@
 module.exports = {
   title: '',
   head: [
-    ['link', { rel: 'icon', href: '/logo.png' }]
+    ['link', { rel: 'icon', href: '/logo6.ico' }]
   ],
   locales: {
     '/': {
